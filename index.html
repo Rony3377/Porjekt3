@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Static Template</title>
+
+</head>
+<style>
+  /**** header box1 ****/
+  header .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    border: gray solid 2px;
+
+    justify-content: space-around;
+    height: 70px;
+    padding: 10px;
+
+    margin: 0px;
+    background-color: rgb(41, 43, 43);
+    color: white;
+    overflow: hidden;
+
+  }
+  .ha1 {
+    filter: sepia(0) blur(0px) brightness(5);
+  }
+  /**** header box1  ol****/
+  header .box1 .ha2 ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 10px;
+   }
+  /* Äußerer header box */
+  header .box1 .ha2 ol li {
+    padding: 1px;
+  }
+  /* Innerer header ol */
+  header .box1 .ha2 ol li {
+    text-decoration-line: none;
+    margin: 5px;
+  }
+  /*******MAIN*******/
+  /*******box2*******/
+  .box2 {
+    background-image: url(bg-2.png);
+    height: 250px;
+    color: white;
+    justify-content: center;
+    padding: 100px;
+    align-items: center
+  }
+  .m1 span {
+    color: rgb(151, 148, 148);
+  }
+  .m1 h5 {
+    font-size: 10px;
+    color: white;
+  }
+  .m1 h4 {
+    font-size: 30px;
+    font-style: 30px;
+  }
+  .m2 {
+    width: 500px;
+    margin: 5px;
+  }
+  .m2 img {
+    max-width: 15px;
+    max-height: 15px;
+    
+    }
+  .m2 button {
+    border: none;
+    padding: 10px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-color: rgb(43, 40, 40);
+    background-image: url(do.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 80% 50%;
+  }
+  .m2 button:hover{
+    transition: 0.5s;
+    background-color: white;
+    color:rgb(9, 49, 71);
+      
+  }
+  /*******box3*******/
+  .m3 h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 0px;
+    font-size: 30px;
+    color: rgb(102, 98, 98)
+  }
+  .m3 h5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 0px;
+    font-size: 12px;
+    color: rgba(118, 117, 139, 0.916);
+
+  }
+   /*******m4 und m5 in grid*******/
+  .box3 .m4, .m5 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .box3 .m4 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: rgb(242, 246, 247);
+  }
+  .box3 .m4 h3{
+    font-size: 17px;
+    color: rgba(118, 117, 139, 0.916);
+    }
+    .box3 .m4 p {
+    font-size: 14px;
+    color: rgba(118, 117, 139, 0.916);
+    width: 400px;
+    height: 200px;
+  }
+  .box3 .m5{
+    grid-column-start: 2;
+    background-color:white;
+    grid-row-start: 1;
+  }
+  .m4 button {
+    margin-right: 10px;
+    color: rgb(97, 40, 40);
+    }
+  .m4 button:hover{
+    width: 150px;
+    filter: sepia(3) brightness(1);
+    background-color:rgb(165, 41, 247);
+    border-radius: 100%;
+  }
+  .m5 {
+    background-image:url(foto-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 350px;
+  }
+ 
+  .box3 .m6{
+    height: 200px;
+    background-color:white;
+    width: 200%;
+  }
+  .box3 .m6 h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 0px;
+    font-size: 15px;
+    color: rgb(102, 98, 98)
+  }
+  .box3 .m6 p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 0px;
+    font-size: 14px;
+    color: rgba(53, 53, 54, 0.916);
+    padding-left: 400px;
+  }
+/*******box4*******/
+  .box4  .span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 8px;
+    margin: 5px;
+    color: rgb(151, 148, 148);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box4 .span > div {
+    width: 200px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .box4 h4 {
+    color: rgb(12, 12, 12);
+  }
+  .m7 img {
+    width: 20px;
+  }
+  .m8 img {
+    width: 20px;
+  }
+  .m8 {
+    text-align: center;
+  }
+  .m9 img {
+    width: 20px;
+  }
+/*******box5*******/
+  .box5 {
+    border: burlywood solid 2px;
+    background-image: url(foto-9.png);
+    background-position: center;
+    height: 250px;
+    color: white;
+    font-size: 10px;
+  }
+
+.box5 .box5-hintergrund {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.582);
+  text-align: center;
+}
+
+.box5 .die85p {
+  position: absolute;
+  width: 80px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.box5  h2 {
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  .box5 img {
+    width: 70px;
+    margin: 5px;
+  }
+  /*******box6*******/
+  .box6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 1px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .box6 h3 {
+    color: rgb(64, 65, 65);
+  }
+  .box6 p {
+    color: dimgray;
+    font-size: 10px;
+  }
+  /*******box7*******/
+  .box7 {
+    background-color: rgb(41, 43, 43);
+
+  }
+  .box7 img {
+    width: 300px;
+    margin: 0px;
+  }
+  /*******box8*******/
+  .box8 {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: rgb(48, 46, 46) solid 1px;
+    text-align: center;
+    background-color: rgb(75, 73, 73);
+    color: white;
+  }
+  .box8 h5{ 
+    color: steelblue;
+    font-size: 10px;
+   }
+   .box8 p{
+    font-size: 12px;
+   }
+  /*******box9*******/
+  .box9 {
+    background-color: rgb(41, 43, 43);
+  }
+  .box9 img {
+    width: 300px;
+    margin: 0px;
+  }
+  /*******box10*******/
+  .box10  {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: rgb(8, 8, 8) solid 0px;
+    background-color: white;
+    display: flex;
+    max-width: 20;
+    max-height: 20px;
+    padding-top: 10px;
+  }
+  .box10 :hover{
+    filter: sepia(0) brightness(1);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 4px 4px 4px gray;
+    background-color:rgb(165, 41, 247);
+  }
+  /*******box11*******/
+  .box11 {
+
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 1px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .box11 h3 {
+    color: rgb(64, 65, 65);
+  }
+
+  .box11 p {
+    color: dimgray;
+    font-size: 10px;
+  }
+/*******box12*******/
+  .box12 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box12 .business-man
+  {
+    margin-top: 70px;
+    width: 130px;
+    height: 130px;
+    background-image: url(foto-7.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .box12 .business-man img {
+    width: 25px;
+    margin: 3px;
+    display: none;
+  }
+  .box12 .business-man:hover img {
+    display: block;
+  }
+    .box12 img {
+    width: 150px;
+  }
+/*******box13*******/
+  .box13 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .x1 {
+    border: rgb(8, 8, 8) solid 1px;
+    width: 130px;
+    height: 50px;
+    text-align: center
+  }
+
+  .x1 h3 {
+    font-size: 10px;
+  }
+
+  .x1 p {
+    font-size: 7px;
+  }
+  .x2 {
+    border: rgb(8, 8, 8) solid 1px;
+    width: 130px;
+    height: 50px;
+    text-align: center
+  }
+.x2 h3 {
+    font-size: 10px;
+  }
+  .x2 p {
+    font-size: 7px;
+  }
+  .x3 {
+    border: rgb(8, 8, 8) solid 1px;
+    width: 130px;
+    height: 50px;
+    text-align: center
+  }
+  .x3 h3 {
+    font-size: 10px;
+  }
+  .x3 p {
+    font-size: 7px;
+  }
+   /*******box14*******/
+  .box14 {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 1px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(64, 65, 65)
+  }
+  .box14 h3 {
+    color: rgb(255, 255, 255);
+  }
+  .box14 p {
+    color: dimgray;
+    font-size: 10px;
+  }
+  .box14 span {
+    color: steelblue;
+    font-size: 7px;
+  }
+  .x4 img {
+    width: 5px;
+  }
+/*******box15*******/
+  .box15 {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: white solid 1px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .box15 h3 {
+    color: rgb(64, 65, 65);
+  }
+  .box15 p {
+    color: dimgray;
+    font-size: 10px;
+  }
+/*******box16*******/
+  .box16 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+   }
+  .box16 img {
+    width: 100%;
+  }
+  .o1 {
+  }
+  .o2 {
+    border: rgb(250, 248, 248) solid 1px;
+  
+  }
+  .o2 span {
+    font-size: 10px;
+  }
+  .o2 h4 {
+    font-size: 15px;
+    color: rgb(58, 57, 57);
+  }
+  .o2 p {
+    font-size: 10px;
+    color: rgb(163, 174, 187);
+  }
+  .o3 {
+    border: rgb(250, 248, 248) solid 1px;
+    text-align: right;
+  
+  }
+  .o3 span {
+    font-size: 10px;
+  }
+  .o3 h4 {
+    font-size: 15px;
+    color: rgb(58, 57, 57);
+  }
+  .o3 p {
+    font-size: 10px;
+    color: rgb(163, 174, 187);
+  }
+  .o4 {
+  
+  }
+  .o5 {
+   
+  }
+  .o6 {
+    border: rgb(250, 248, 248) solid 1px;
+
+  }
+  .o6 span {
+    font-size: 10px;
+  }
+  .o6 h4 {
+    font-size: 15px;
+    color: rgb(58, 57, 57);
+  }
+  .o6 p {
+    font-size: 10px;
+    color: rgb(163, 174, 187);
+  }
+  /*******box17*******/
+  .box17 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    width: 50px;
+    background-image: url(btn-round.png);
+    background-color: rgb(65, 67, 68);
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    border-radius: 100%;
+  }
+ /*******box18*******/
+  .box18 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: slategrey;
+    font-size: 25px;
+  }
+  /*******box19*******/
+  .box19 span { 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(57, 57, 58);
+  }
+  .box19 span div {
+    margin-right: 400px;
+  }
+  /*******box20*******/
+  .box20 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .box20 :hover{
+    filter: sepia(0) brightness(1);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 4px 4px 4px gray;
+  }
+  /*******footer*******/
+
+  footer .feld1 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  border:dimgray solid 2px;
+  background-color: rgb(35, 35, 36);
+  height: 400px;
+  color: rgb(142, 151, 160);
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 50px;
+  font-size: 10px;
+  justify-content:center;
+  }
+  .feld1 .f1 {
+    grid-column-start: 1;
+    grid-row: 1 /span 3 ;
+    width: 130px;
+    padding-bottom: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-left: auto;
+    
+  }
+  .feld1 .f1 img{
+    width: 80px;
+  }
+  .feld1 .f4{
+    width: 130px;
+  }
+  .feld1 .f4  .s1{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  footer  .f4 img {
+    max-width: 15px;
+    color: rgb(102, 98, 98)
+  }
+  .feld2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(142, 151, 160);
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    height: 50px;
+  }
+ 
+</style>
+<header>
+  <div class="box1">
+   <div class="ha1"><img src="logo.png" />
+  </div>
+    <div class="ha2">
+      <ol>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>PORTFOLIOS</li>
+        <li>TEAM</li>
+        <li>BLOG</li>
+        <li>KONTAKT</li>
+      </ol>
+    </div>
+  </div>
+
+</header>
+<main>
+  <div class="box2">
+    <div class="m1">
+      <h5>GRAP YOUR COPY OF</h5>
+      <h4>THE <span>PREMUM</span> QUALITY</h4>
+      <h4>PSD TEMPLATE FOR<span> FREE</span></h4>
+    </div>
+   <div class="m2">
+      <button>Download</button>
+    </div>
+  </div>
+ 
+  <div class="box3">
+    <div class="m3">
+      <h3> know  <u> abo</u>ut us<h3>
+          <h5>Nam liber tempor cum soluta nobis eleifend<br /> option congue nihil imperdiet doming id quod mazim</h5>
+    </div>
+    <div class="m4">
+    <div>
+      <h3>WE ARE THE BEST</h3>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Fugiat voluptas ex assumenda consequatur veritatis<br/>
+         <br/>  
+         distinctio officiis at, tempora repellendus laborum et
+         quisquam dolor
+         Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+         Illo nam eos excepturi ipsum autem pariatur animi,
+         Illo nam eos excepturi ipsum autem pariatur animi,
+         Illo nam eos excepturi ipsum autem pariatur animi,
+         Illo nam eos excepturi ipsum autem pariatur animi,
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Fugiat voluptas ex assumenda consequatur veritati
+         dio voluptatem iure eaque! Quo eos facere quia sed cumque 
+         vero nisi,
+         dicta repellendus.
+      </p>
+      <button>READ MORE &rarr;</button>
+    </div>
+   
+  <div class="m5">
+      
+    </div>
+    
+  <div class="m6">
+      <h3>SERVICES WE PROVID</h3>
+
+      <p>lorem ipsum dolor sit, amet consectetur adipisicing elit lorem ipsum <br /> 
+        ratione eveniet optio itaque tempore porro ratione eveniet optio<br/>
+         Harum, veritatis.pore porro ratione eveniet optio itaque tempore porro</p>
+         
+      </p>
+  </div> 
+</div>
+
+  <div class="box4">
+    <div class = "span">
+      <div class="m7">
+        <img src="icon-consultancy.png">
+        <h4>CONSULTANCY</h4>
+        <p> lorem ipsum dolor sit, amet consectetur adipisicing elit<br />. Harum,
+          veritatis. Error dolorum odit mollitia dbitis<br /> ratione eveniet
+          optio itaque tempore porro</p>
+      </div>
+      <div class="m8">
+        <img src="icon-marketing.png">
+        <h4>MARKETING</h4>
+        <p> lorem ipsum dolor sit, amet consectetur adipisicing elit<br />. Harum,
+          veritatis. Error dolorum odit mollitia dbitis<br /> ratione eveniet
+          optio itaque tempore porro</p>
+      </div>
+      <div class="m9">
+        <img src="icon-reaserch.png">
+        <h4>REASERCH</h4>
+        <p> lorem ipsum dolor sit, amet consectetur adipisicing elit<br />. Harum,
+          veritatis. Error dolorum odit mollitia dbitis<br /> ratione eveniet
+          optio itaque tempore porro</p>
+      </div>
+    </div>
+  </div>
+  <div class="box5">
+    <div class = "box5-hintergrund">
+      <h2>OUR SKILLS</h2>
+      <div class="b1">
+        <p class = "die85p">85%</p>
+        <img src="skill-shape.png" />
+        <p>Marketing</p>
+      </div>
+      <div class="b2">
+          <p class = "die85p">85%</p>
+          <img src="skill-shape.png" />
+        <p>Reaserch</p>
+      </div>
+      <div class="b3">
+          <p class = "die85p">85%</p>
+          <img src="skill-shape.png" />
+        <p>Manegment</p>
+      </div>
+      <div class="b4">
+          <p class = "die85p">85%</p>
+          <img src="skill-shape.png" />
+        <p>Consultancy</p>
+      </div>
+      <div class="b5">
+          <p class = "die85p">85%</p>
+          <img src="skill-shape.png" />
+        <p>Promotion</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box6">
+    <h3>SOME RE<u>CEN</u>T PROJECTS</h3>
+
+    <p>Nam liber tempor cum soluta nobis eleifend<br /> option congue nihil imperdiet doming id quod mazim</p>
+
+  </div>
+  <div class="box7">
+    <img src="foto-2.png" />
+    <img src="foto-3.png" />
+    <img src="foto-4.png" />
+    <img src="foto-5.png" />
+  </div>
+  <div class="box8">
+    <h4> LATEST FROM TWITTER</h4>
+    <p>Trying out velocitey a-simple webseite building extension for photoshop</p>
+    <h5>buff.ly/NC8gog</h5>
+  </div>
+  <div class="box9">
+    <img src="foto-2.png" />
+    <img src="foto-3.png" />
+    <img src="foto-4.png" />
+    <img src="foto-5.png" />
+  </div>
+  <div class="box10">
+    <button>see all &rarr;</button>
+
+  </div>
+  <div class="box11">
+
+    <h3>OUER TEA<u>M M</u>EMBERS</h3>
+
+    <p>Nam liber tempor cum soluta nobis eleifend<br /> option congue nihil imperdiet doming id quod mazim</p>
+
+
+  </div>
+  <div class="box12">
+    <div class = "business-man">
+        <img src="twitter.png" />
+        <img src="icon-facebook.webp" />
+        <img src="insta.png" />
+    </div>
+    <div class = "business-man">
+        <img src="twitter.png" />
+        <img src="icon-facebook.webp" />
+        <img src="insta.png" />
+    </div>
+    <div class = "business-man">
+        <img src="twitter.png" />
+        <img src="icon-facebook.webp" />
+        <img src="insta.png" />
+    </div>
+  </div>
+  <div class="box13">
+    <div class="x1">
+      <h3> MITCHELL ANDERSON</h3>
+      <p>CREATIVE DIREKTOR</p>
+    </div>
+    <div class="x2">
+      <h3> MITCHELL ANDERSON</h3>
+      <p>CREATIVE DIREKTOR</p>
+    </div>
+    <div class="x3">
+      <h3> MITCHELL ANDERSON</h3>
+      <p>CREATIVE DIREKTOR</p>
+    </div>
+  </div>
+  <div class="box14">
+    <h3>WAHT OUR CLEINTS ARE SAYING</h3>
+
+    <p>Nam liber tempor cum soluta nobis eleifend<br /> option congue nihil imperdiet doming id quod mazim</p>
+    <p>John Doe</p>
+    <span> www.yourwebsite.ze</span>
+    <div class="x4">
+      <img src="punkt.png" />
+      <img src="Ellipse 9 copy.png" />
+      <img src="Ellipse 9 copy.png" />
+    </div>
+  </div>
+  <div class="box15">
+    <h3>OU<u>R B</u>LOG</h3>
+
+    <p>Nam liber tempor cum soluta nobis eleifend<br /> option congue nihil imperdiet doming id quod mazim</p>
+  </div>
+  <br />
+  <div class="box16">
+    <div class="o1">
+      <img src="foto-8.png" />
+    </div>
+    <div class="o2">
+      <span>10 April 2014</span>
+      <h4>Typi non habent claritatem insitam</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ipsam possimus ipsum officiis,
+        atque reiciendis iusto labore? Assumenda vero ut ad dolor, saepe asperiores,
+        vitae deserunt est fugiat accusantium eos.</p>
+    </div>
+    <div class="o3">
+      <span>20 March 2014</span>
+      <h4>Typi non habent claritatem insitam</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ipsam possimus ipsum officiis,
+        atque reiciendis iusto labore? Assumenda vero ut ad dolor, saepe asperiores,
+        vitae deserunt est fugiat accusantium eos.</p>
+    </div>
+    <div class="o4">
+      <img src="foto-8.png" />
+    </div>
+    <div class="o5">
+      <img src="foto-8.png" />
+    </div>
+    <div class="o6">
+      <span>10 January 2014</span>
+      <h4>Typi non habent claritatem insitam</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ipsam possimus
+        ipsum officiis, atque reiciendis iusto labore? Assumenda vero ut ad dolor,
+        saepe asperiores,vitae deserunt est fugiat accusantium eos.</p>
+    </div>
+
+  </div>
+  <br />
+  <br />
+
+  <div class="box17">
+    <p>all post</p>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="box18">
+    <p>CONTACT</p>
+
+  </div>
+  <hr />
+  <div class="box19">
+    <span>
+
+      <p>Name* </p>
+      <div>
+        <p>Email*</p>
+      </div>
+
+    </span>
+    <hr />
+    <p>Message... </p>
+    <hr />
+  </div>
+  <div class="box20">
+      <button>submit</button>
+  </div>
+</main>
+<footer>
+  <div class="feld1" >
+    <div class="f1">
+      <img src="logo.png">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ea aspernatur sapiente vitae eum deserunt cum<br/><br/>
+        laborum ratione ipsum, suscipit,<br/> quis quidem itaque eligendi provident, quas possimus consequuntur eius nam?<br/>
+        laborum ratione ipsum,<br/> suscipit, quis quidem itaque eligendi provident,<br/> quas possimus consequuntur eius nam?
+        quis quidem itaque eligendi provident, quas possimus consequuntur eius nam?
+        
+      </p>
+    </div>
+    <div class="f2">
+      <h3>RESENT POSTS</h3>
+      <span>March 30 2014</span>
+      <p>Duis auten vel eum iriure dolor</p>
+      <br />
+      <hr />
+
+      <span>March 30 2014</span>
+      <p>Duis auten vel eum iriure dolor</p>
+      <br />
+      <hr />
+      <span>March 30 2014</span>
+      <p>Duis auten vel eum iriure dolor</p>
+      <br />
+      <hr />
+
+    </div>
+    <div class="f3">
+      <h3>TWITTER FEEDS</h3>
+      <span>about zwei days ago @ kristian platt</span>
+      <p>Good work body</p>
+      <br />
+      <hr />
+      <span>about zwei days ago @ kristian platt</span>
+      <p>Good work body</p>
+      <br />
+      <hr />
+      <span>about zwei days ago @ kristian platt</span>
+      <p>Good work body</p>
+      <br />
+      <hr />
+
+    </div>
+    <div class="f4">
+      <h3>OUR ADRESS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sint placeat cumque distinctio molestiae ipsa totam sapiente
+        perferendis. Ratione, hic odit. Error beatae laudantium
+        natus dolores eos reprehenderit praesentium architecto obcaecati!</p>
+      <span class="s1">
+        <img src="icon-place.png">
+        <div>Moonshine st. 14/15 light</div>
+      </span>
+      <span class="s2">
+        <img src="icon-telefon.png">
+        <div>+00(123)456 78 90</div>
+      </span>
+      <span class="s3">
+        <img src="icon-mail.png">
+        <div>first.last @gmail.com</div>
+      </span>
+    
+  </div>
+
+  </div>
+  <div class="feld2">
+    & copy:2014 Imran Khan All Right Reserved
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
